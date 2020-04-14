@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   pathPrefix: '',
   siteMetadata: {
@@ -14,10 +16,13 @@ module.exports = {
         subtitle: 'Documentation',
         description: 'An opinionated UI components library for React.',
         githubRepo: 'insites-co/insites-ui-docs',
+        algoliaApiKey: process.env.GATSBY_ALGOLIA_API_KEY,
+        algoliaIndexName: process.env.GATSBY_ALGOLIA_INDEX,
         sidebarCategories: {
           null: [
             'index',
-            'getting-started'
+            'getting-started',
+            'customization'
           ],
           'Framework Specific': [
             'framework-specific/gatsby',

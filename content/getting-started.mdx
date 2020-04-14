@@ -17,13 +17,13 @@ Pick one of the two below.
 ### Using Yarn
 
 ```sh
-$ yarn add insites-ui
+$ yarn add insites-ui typeface-inter
 ```
 
 ### Using NPM
 
 ```sh
-$ npm i insites-ui
+$ npm i insites-ui typeface-inter
 ```
 
 ### ThemeProvider (for basic React apps and Create React App)
@@ -47,6 +47,18 @@ export default DefaultLayout
 ```
 
 If you are using Gatsby, please refer to [this guide](/framework-specific/gatsby).
+
+## Install font
+
+Our framework uses [Inter typeface](https://rsms.me/inter/) (Thank you @rsms for developing it!). To use the typeface simply require
+it at the top of `App.js` (for Gatsby: `gatsby-browser.js` and `gatsby-ssr.js`).
+
+```js
+// /src/App.js
+require('typeface-inter')
+```
+
+If you'd like a different font, you can customize the theme.
 
 ### That's it 🎉
 
