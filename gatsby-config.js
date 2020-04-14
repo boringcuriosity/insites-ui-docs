@@ -38,6 +38,7 @@ module.exports = {
           ],
           Form: [
             'form/checkbox',
+            'form/form-control',
             'form/input',
             'form/radio',
             'form/select',

@@ -1,0 +1,74 @@
+---
+title: FormControl
+description: ""
+---
+
+import { FormControl, Input, Textarea, Radio, Button } from 'insites-ui'
+import DemoBox from '../../components/DemoBox'
+
+## Component
+
+The form control is a wrapper for all other components in Forms section. It adds
+an accessible label and allows to handle error message.
+
+## Adding label
+
+<DemoBox>
+    <FormControl>
+        <FormControl.Label htmlFor="displayName">Display name</FormControl.Label>
+        <Input id="displayName" placeholder="Bryan Fury" />
+    </FormControl>
+</DemoBox>
+
+```js
+import { FormControl, Input } from 'insites-ui'
+
+<FormControl>
+    <FormControl.Label htmlFor="displayName">Display name</FormControl.Label>
+    <Input id="displayName" placeholder="Bryan Fury" />
+</FormControl>
+```
+
+## Handling errors
+
+<DemoBox>
+    <FormControl>
+        <FormControl.Label htmlFor="displayName2">Display name</FormControl.Label>
+        <Input id="displayName2" placeholder="Bryan Fury" hasError />
+        <FormControl.Error>Given name is too short.</FormControl.Error>
+    </FormControl>
+</DemoBox>
+
+```js
+import { FormControl, Input } from 'insites-ui'
+
+<FormControl>
+    <FormControl.Label htmlFor="displayName">Display name</FormControl.Label>
+    <Input id="displayName" placeholder="Bryan Fury" hasError />
+    <FormControl.Error>Given name is too short.</FormControl.Error>
+</FormControl>
+```
+
+## Form example
+
+<DemoBox>
+    <FormControl>
+        <FormControl.Label htmlFor="fullName">Full name</FormControl.Label>
+        <Input id="fullName" placeholder="Bryan Fury" />
+    </FormControl>
+    <FormControl>
+        <FormControl.Label htmlFor="email">Email</FormControl.Label>
+        <Input id="email" type="email" placeholder="bryan@fury.io" />
+    </FormControl>
+    <FormControl style={{ marginBottom: '2rem' }}>
+        <FormControl.Label htmlFor="message">Message</FormControl.Label>
+        <Textarea id="message" placeholder="Leave a message" />
+    </FormControl>
+    <FormControl>
+      <Radio checked>Cash on delivery</Radio>
+    </FormControl>
+    <FormControl style={{ marginBottom: '2rem' }}>
+      <Radio>Money transfer</Radio>
+    </FormControl>
+    <Button variant="primary">Send now</Button>
+</DemoBox>

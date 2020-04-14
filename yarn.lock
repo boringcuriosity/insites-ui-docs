@@ -9628,10 +9628,10 @@ inquirer@^7.0.0:
     strip-ansi "^6.0.0"
     through "^2.3.6"
 
-insites-ui@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/insites-ui/-/insites-ui-0.1.2.tgz#2f90699805e40e31dd8e471de66bc8812cdece11"
-  integrity sha512-WfCjf71HwrtCCWZGakuSueAFO6H2jE8Lf0OIlNM/VUlFmSXvUfpGnG0l+XQkKS8eOlyo7uFg8wYBgTdly6y9MA==
+insites-ui@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/insites-ui/-/insites-ui-0.1.4.tgz#43539d2c880b755c7a80efdf0f4e8ff7d766a2a2"
+  integrity sha512-OBCiY1YmYfhKx9aCkgI/CJt1Mb4S2DX8VKHjTdKENMndEgWYRqb3LC7lR9s9AWelu3uWvbpmXkrBtSdHLMSssQ==
   dependencies:
     "@types/node" "^13.11.1"
     "@types/react" "^16.9.34"
