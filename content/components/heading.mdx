@@ -1,0 +1,38 @@
+---
+title: Heading
+description: ""
+---
+
+Heading can be used to display the title at the beginning of your page or section.
+
+import { Heading } from 'insites-ui'
+import DemoBox from '../../components/DemoBox'
+
+<DemoBox>
+  <Heading as="h2" mb={0}>The quick brown fox jumps over the lazy dog</Heading>
+</DemoBox>
+
+```js
+import { Heading } from 'insites-ui'
+
+<Heading>...</Heading>
+<Heading as="h2">...</Heading>
+```
+
+## Size
+
+You can easily modify the size of your heading by passing the `size` prop to the component.
+
+<DemoBox>
+  <Heading as="h2" size="xl">The quick brown fox jumps over the lazy dog</Heading>
+  <Heading as="h2" size="l">The quick brown fox jumps over the lazy dog</Heading>
+  <Heading as="h2" size="m" mb={0}>The quick brown fox jumps over the lazy dog</Heading>
+</DemoBox>
+
+```js
+import { Heading } from 'insites-ui'
+
+<Heading size="xl">...</Heading>
+<Heading size="l">...</Heading>
+<Heading size="m">...</Heading>
+```
