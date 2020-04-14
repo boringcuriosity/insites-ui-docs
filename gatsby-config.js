@@ -33,7 +33,7 @@ module.exports = {
             'components/button',
             'components/container',
             'components/heading',
-            'components/text'
+            'components/text',
             'components/tooltip'
           ],
           Form: [
