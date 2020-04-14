@@ -30,7 +30,8 @@ module.exports = {
           ],
           Components: [
             'components/box',
-            'components/button'
+            'components/button',
+            'components/container'
           ]
         }
       }
