@@ -1,0 +1,63 @@
+---
+title: Input
+description: ""
+---
+
+## Component
+
+import { Input } from 'insites-ui'
+import DemoBox from '../../components/DemoBox'
+import PhoneIcon from '../../assets/phone.svg'
+
+The input is a control to get user input in a text field. 
+Can be used alongside FormControl, providing an accessible label, 
+validation messages, etc.
+
+<DemoBox>
+    <Input placeholder="Bryan Fury" />
+</DemoBox>
+
+```js
+import { Input } from 'insites-ui'
+
+<Input placeholder="Bryan Fury" />
+```
+
+## Error handling
+
+<DemoBox>
+    <Input placeholder="Bryan Fury" hasError />
+</DemoBox>
+
+```js
+import { Input } from 'insites-ui'
+
+<Input placeholder="Bryan Fury" hasError />
+```
+
+## Input with icon
+
+<DemoBox>
+    <Input placeholder="Bryan Fury" IconComponent={() => <img src={PhoneIcon} />} />
+</DemoBox>
+
+```js
+import { Input } from 'insites-ui'
+import { ReactComponent as PhoneIcon } from '../assets/phone.svg'
+// If your SVG loader renders the icon as image source, pass it like
+// IconComponent={() => <img src={PhoneIcon}} />
+
+<Input placeholder="Bryan Fury" IconComponent={PhoneIcon} />
+```
+
+## Input with tooltip
+
+<DemoBox>
+    <Input placeholder="Bryan Fury" tooltip="Hidden message" />
+</DemoBox>
+
+```js
+import { Input } from 'insites-ui'
+
+<Input placeholder="Bryan Fury" tooltip="Hidden message" />
+```

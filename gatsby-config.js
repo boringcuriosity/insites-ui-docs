@@ -34,6 +34,10 @@ module.exports = {
             'components/container',
             'components/heading',
             'components/text'
+            'components/tooltip'
+          ],
+          Form: [
+            'form/input'
           ]
         }
       }
