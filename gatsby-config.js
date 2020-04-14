@@ -37,7 +37,9 @@ module.exports = {
             'components/tooltip'
           ],
           Form: [
+            'form/checkbox',
             'form/input',
+            'form/radio',
             'form/select',
             'form/textarea'
           ]

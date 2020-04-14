@@ -1,0 +1,39 @@
+---
+title: Checkbox
+description: ""
+---
+
+import { Checkbox } from 'insites-ui'
+import DemoBox from '../../components/DemoBox'
+
+## Component
+
+The checkbox is an additional control, that fits perfectly "Remember me" and
+accept agreements or conditions function.
+
+<DemoBox>
+    <Checkbox
+      id="rememberMe"
+      checked={true}
+      onChange={() => {}}
+    >
+      Remember me
+    </Checkbox>
+</DemoBox>
+
+```js
+import { useState } from 'react'
+import { Checkbox } from 'insites-ui'
+
+// Inside component
+const [isChecked, setIsChecked] = useState(false)
+const toggle = () => setIsChecked(!isChecked)
+
+<Checkbox
+  id="rememberMe"
+  checked={isChecked}
+  onChange={toggle}
+>
+  Remember me
+</Checkbox>
+```
