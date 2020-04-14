@@ -33,6 +33,9 @@ module.exports = {
             'components/button',
             'components/container',
             'components/tooltip'
+          ],
+          Form: [
+            'form/input'
           ]
         }
       }
