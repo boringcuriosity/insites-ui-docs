@@ -32,6 +32,8 @@ module.exports = {
             'components/box',
             'components/button',
             'components/container',
+            'components/heading',
+            'components/text'
             'components/tooltip'
           ],
           Form: [
