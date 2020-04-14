@@ -38,7 +38,8 @@ module.exports = {
           ],
           Form: [
             'form/input',
-            'form/select'
+            'form/select',
+            'form/textarea'
           ]
         }
       }
