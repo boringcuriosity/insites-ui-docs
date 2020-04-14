@@ -1,0 +1,42 @@
+---
+title: Box
+description: ""
+---
+
+import { Box, Heading, Text } from 'insites-ui'
+import DemoBox from '../../components/DemoBox'
+
+## Concept
+
+Box is an abstract component meant for boosting the productivity. It accepts various
+parameters altering its appearance including:
+background, border, color, display, position, shadow, space, typography.
+
+## Component
+
+Enough talking. Let's create something using it. Let it be a Card component.
+
+<DemoBox backgroundColor="#F4F8FB">
+    <Box
+      backgroundColor="#ffffff"
+      boxShadow="0 0.5rem 1rem rgba(0, 0, 0, 0.05)"
+      borderRadius="0.5rem"
+      padding="2rem"
+    >
+      <Heading size="l">My new favorite card</Heading>
+      <Text m={0}>Cool.</Text>
+    </Box>
+</DemoBox>
+
+```js
+import { Box } from 'insites-ui'
+
+<Box
+  backgroundColor="#ffffff"
+  boxShadow="0 0.5rem 1rem rgba(0, 0, 0, 0.05)"
+  borderRadius="0.5rem"
+  padding="2rem"
+>
+  ...
+</Box>
+```

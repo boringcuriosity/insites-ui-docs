@@ -29,6 +29,7 @@ module.exports = {
             'framework-specific/next'
           ],
           Components: [
+            'components/box',
             'components/button'
           ]
         }
