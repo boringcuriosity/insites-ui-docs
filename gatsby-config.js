@@ -37,7 +37,8 @@ module.exports = {
             'components/tooltip'
           ],
           Form: [
-            'form/input'
+            'form/input',
+            'form/select'
           ]
         }
       }
