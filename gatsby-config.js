@@ -31,7 +31,8 @@ module.exports = {
           Components: [
             'components/box',
             'components/button',
-            'components/container'
+            'components/container',
+            'components/tooltip'
           ]
         }
       }
