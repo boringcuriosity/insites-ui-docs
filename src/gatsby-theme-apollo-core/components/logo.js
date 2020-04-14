@@ -1,3 +1,4 @@
 import React from 'react'
+import { Heading } from 'insites-ui'
 
-export default () => <h2>Insites UI</h2>
+export default () => <Heading size="l" as="h2">Insites UI</Heading>

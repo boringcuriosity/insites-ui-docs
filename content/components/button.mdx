@@ -1,6 +1,85 @@
 ---
 title: Button
-description: Button component
+description: " "
 ---
 
-## Test
+import { Button } from 'insites-ui'
+import DemoBox from '../../components/DemoBox'
+
+Button is a component responsible for triggering actions or events, for instance, submitting Forms, opening Dialogs.
+We bundled few variants of Buttons, so it suites context, where it's being used.
+
+## Primary
+
+This variant is suitable for triggering main events in your interface.
+
+<DemoBox>
+    <Button variant="primary">Submit now</Button>
+</DemoBox>
+
+```js
+import { Button } from 'insites-ui'
+
+<Button variant="primary">Submit now</Button>
+```
+
+## Secondary
+
+This variant is suitable for supporting character events such as cancelling the action or closing modals.
+
+<DemoBox>
+    <Button variant="secondary">Cancel</Button>
+</DemoBox>
+
+```js
+import { Button } from 'insites-ui'
+
+<Button variant="secondary">Cancel</Button>
+```
+
+## Pill
+
+This variant adds some extra spice to the interface. We utilise it for example for navigation bars action.
+
+<DemoBox>
+    <Button variant="pill">Sign in</Button>
+</DemoBox>
+
+```js
+import { Button } from 'insites-ui'
+
+<Button variant="pill">Sign in</Button>
+```
+
+## Blank
+
+It's the button in its simplest form. It can be utilised as a not that important action in your interface. For example
+attachment upload.
+
+<DemoBox>
+    <Button variant="blank">Upload the PDF</Button>
+</DemoBox>
+
+```js
+import { Button } from 'insites-ui'
+
+<Button variant="blank">Upload the PDF</Button>
+```
+
+## Size variants
+
+The button component has also a property for size variants.
+
+<DemoBox>
+    <Button variant="primary" size="huge">Submit now</Button>
+    <Button variant="primary" ml="1rem">Submit now</Button>
+    <Button variant="primary" size="small" ml="1rem">Submit now</Button>
+</DemoBox>
+
+```js
+import { Button } from 'insites-ui'
+
+<Button variant="primary" size="huge">Submit now</Button>
+<Button variant="primary">Submit now</Button>
+<Button variant="primary" size="small">Submit now</Button>
+```

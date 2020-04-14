@@ -1,6 +1,21 @@
+---
+title: Use with Gatsby
+description: ""
+---
+
+Update your `gatsby-browser.js` to look like this:
+
+```js
 const React = require('react')
 const { ThemeProvider, theme } = require('insites-ui')
 
 export const wrapPageElement = ({ element, props }) => {
   return <ThemeProvider theme={theme} {...props}>{element}</ThemeProvider>
 }
+```
+
+And your `gatsby-ssr.js` to look like this:
+
+```js
+export { wrapPageElement } from './gatsby-browser'
+```

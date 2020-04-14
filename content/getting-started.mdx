@@ -1,0 +1,53 @@
+---
+title: Getting started
+description: ""
+---
+
+## Before we start
+
+Make sure you've got `Node` and optionally `Yarn`. Your `package.json` should contains following dependencies:
+`react`, `react-dom` and `styled-components` 
+
+## Installation
+
+In your project's root, run the following command in your Terminal:
+
+Pick one of the two below.
+
+### Using Yarn
+
+```sh
+$ yarn add insites-ui
+```
+
+### Using NPM
+
+```sh
+$ npm i insites-ui
+```
+
+### ThemeProvider (for basic React apps and Create React App)
+
+When your package manager finished installing `insites-ui`, you should add `ThemeProvider` to your project.
+Place the ThemeProvider as high in JSX structure as you can. It can be for example a layout component.
+
+```js
+// /src/layouts/Default.js
+import { ThemeProvider, theme } from 'insites-ui'
+
+const DefaultLayout = ({ children }) => {
+  return (
+    <ThemeProvider theme={theme}>
+      {children}
+    </ThemeProvider>
+  )
+}
+
+export default DefaultLayout
+```
+
+If you are using Gatsby, please refer to [this guide](/framework-specific/gatsby).
+
+### That's it 🎉
+
+Now you can use the components from `insites-ui`.
