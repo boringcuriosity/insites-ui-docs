@@ -10,8 +10,8 @@ Update your `gatsby-browser.js` to look like this:
 const React = require('react')
 const { ThemeProvider, theme } = require('insites-ui')
 
-export const wrapPageElement = ({ element, props }) => {
-  return <ThemeProvider theme={theme} {...props}>{element}</ThemeProvider>
+export const wrapRootElement = ({ element }) => {
+  return <ThemeProvider theme={theme}>{element}</ThemeProvider>
 }
 ```
 
@@ -19,5 +19,5 @@ And your `gatsby-ssr.js` to look like this:
 
 ```js
 // /gatsby-ssr.js
-export { wrapPageElement } from './gatsby-browser'
+export { wrapRootElement } from './gatsby-browser'
 ```

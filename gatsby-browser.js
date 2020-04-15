@@ -10,9 +10,9 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-export const wrapPageElement = ({ element, props }) => {
+export const wrapRootElement = ({ element }) => {
   return (
-    <ThemeProvider theme={theme} {...props}>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       {element}
     </ThemeProvider>
