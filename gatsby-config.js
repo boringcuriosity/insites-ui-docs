@@ -22,7 +22,8 @@ module.exports = {
           null: [
             'index',
             'getting-started',
-            'customization'
+            'customization',
+            'principles'
           ],
           'Framework Specific': [
             'framework-specific/gatsby',
