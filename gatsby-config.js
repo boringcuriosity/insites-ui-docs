@@ -18,6 +18,7 @@ module.exports = {
         githubRepo: 'insites-co/insites-ui-docs',
         algoliaApiKey: process.env.GATSBY_ALGOLIA_API_KEY,
         algoliaIndexName: process.env.GATSBY_ALGOLIA_INDEX,
+        segmentApiKey: process.env.GATSBY_SEGMENT_API_KEY,
         sidebarCategories: {
           null: [
             'index',
