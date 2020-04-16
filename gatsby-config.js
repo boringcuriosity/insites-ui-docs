@@ -24,7 +24,8 @@ module.exports = {
             'index',
             'getting-started',
             'customization',
-            'principles'
+            'principles',
+            'design-system'
           ],
           'Framework Specific': [
             'framework-specific/gatsby',
@@ -35,6 +36,7 @@ module.exports = {
             'components/button',
             'components/container',
             'components/heading',
+            'components/modal',
             'components/text',
             'components/tooltip'
           ],
