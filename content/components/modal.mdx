@@ -8,3 +8,17 @@ import ModalDemo from '../../components/ModalDemo'
 The modal component is a powerful tool for displaying short action forms or confirming user's choice.
 
 <ModalDemo />
+
+```jsx
+import { Modal, useModal } from 'insites-ui'
+
+// Inside component
+const { isVisible, toggle } = useModal()
+
+<Modal isVisible={isVisible} onHide={toggle}>
+    // Modal body
+    <Modal.Footer>
+      // Buttons etc.
+    </Modal.Footer>
+</Modal>
+```

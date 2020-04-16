@@ -37,6 +37,7 @@ module.exports = {
             'components/container',
             'components/heading',
             'components/modal',
+            'components/table',
             'components/text',
             'components/tooltip'
           ],

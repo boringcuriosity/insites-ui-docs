@@ -7,8 +7,6 @@ import { Input } from 'insites-ui'
 import DemoBox from '../../components/DemoBox'
 import PhoneIcon from '../../assets/phone.svg'
 
-## Component
-
 The input is a control to get user input in a text field. 
 Can be used alongside FormControl, providing an accessible label, 
 validation messages, etc.
@@ -17,7 +15,7 @@ validation messages, etc.
     <Input placeholder="Bryan Fury" />
 </DemoBox>
 
-```js
+```jsx
 import { Input } from 'insites-ui'
 
 <Input placeholder="Bryan Fury" />
@@ -29,7 +27,7 @@ import { Input } from 'insites-ui'
     <Input placeholder="Bryan Fury" hasError />
 </DemoBox>
 
-```js
+```jsx
 import { Input } from 'insites-ui'
 
 <Input placeholder="Bryan Fury" hasError />
@@ -41,7 +39,7 @@ import { Input } from 'insites-ui'
     <Input placeholder="Bryan Fury" IconComponent={() => <img src={PhoneIcon} />} />
 </DemoBox>
 
-```js
+```jsx
 import { Input } from 'insites-ui'
 import { ReactComponent as PhoneIcon } from '../assets/phone.svg'
 // If your SVG loader renders the icon as image source, pass it like
@@ -56,7 +54,7 @@ import { ReactComponent as PhoneIcon } from '../assets/phone.svg'
     <Input placeholder="Bryan Fury" tooltip="Hidden message" />
 </DemoBox>
 
-```js
+```jsx
 import { Input } from 'insites-ui'
 
 <Input placeholder="Bryan Fury" tooltip="Hidden message" />

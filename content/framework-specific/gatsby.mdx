@@ -5,7 +5,7 @@ description: ""
 
 Update your `gatsby-browser.js` to look like this:
 
-```js
+```jsx
 // /gatsby-browser.js
 const React = require('react')
 const { ThemeProvider, theme } = require('insites-ui')
@@ -17,7 +17,7 @@ export const wrapRootElement = ({ element }) => {
 
 And your `gatsby-ssr.js` to look like this:
 
-```js
+```jsx
 // /gatsby-ssr.js
 export { wrapRootElement } from './gatsby-browser'
 ```
