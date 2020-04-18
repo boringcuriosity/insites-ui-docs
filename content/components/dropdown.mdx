@@ -1,0 +1,35 @@
+---
+title: Dropdown
+description: ""
+---
+
+import { Dropdown, Button } from 'insites-ui'
+import DemoBox from '../../components/DemoBox'
+
+A dropdown allows the user to select an option from a collection or predefined menu.
+
+<DemoBox>
+  <Dropdown
+    Trigger={() => (
+      <Button variant="secondary" size="small">
+        Click me
+      </Button>
+    )}
+  >
+    Hidden content
+  </Dropdown>
+</DemoBox>
+
+```jsx
+import { Dropdown, Button } from 'insites-ui'
+
+<Dropdown
+  Trigger={() => (
+    <Button variant="secondary" size="small">
+      Click me
+    </Button>
+  )}
+>
+  Hidden content
+</Dropdown>
+```

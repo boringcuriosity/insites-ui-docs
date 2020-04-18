@@ -35,6 +35,7 @@ module.exports = {
             'components/box',
             'components/button',
             'components/container',
+            'components/dropdown',
             'components/heading',
             'components/modal',
             'components/table',
