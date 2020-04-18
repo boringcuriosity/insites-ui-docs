@@ -3,6 +3,37 @@ title: Use with Next.js
 description: ""
 ---
 
-Coming soon.
+Add following dependencies to your project:
 
-Psst. you can help us and write this guide ☝️
+```sh
+$ yarn add -D next-transpile-modules next-images
+```
+
+Update your `next.config.js` to look like this:
+
+```jsx
+// /next.config.js
+const withImages = require('next-images');
+const withTM = require('next-transpile-modules')([
+  'styled-components',
+  'insites-ui',
+]);
+
+module.exports = withTM(withImages());
+```
+
+And your `_app.js` to look like this:
+
+```jsx
+// /pages/_app.js
+import { ThemeProvider, theme } from 'insites-ui';
+import 'typeface-inter';
+
+export default function CustomApp({ Component, pageProps }) {
+  return (
+    <ThemeProvider theme={theme}>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
+}
+```
