@@ -2,7 +2,6 @@
 import PropTypes from 'prop-types';
 import React, {Fragment} from 'react';
 import TextFit from 'react-textfit';
-import {ApolloIcon} from '@apollo/space-kit/icons/ApolloIcon';
 import {Global, css} from '@emotion/core';
 import {IconArrowRight} from '@apollo/space-kit/icons/IconArrowRight';
 import {colors} from 'gatsby-theme-apollo-core/src/utils/colors';

@@ -48,7 +48,8 @@ module.exports = {
             'form/input',
             'form/radio',
             'form/select',
-            'form/textarea'
+            'form/textarea',
+            'form/toggle'
           ]
         }
       }

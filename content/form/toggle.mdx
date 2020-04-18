@@ -1,0 +1,36 @@
+---
+title: Toggle
+description: ""
+---
+
+import { Toggle } from 'insites-ui'
+import DemoBox from '../../components/DemoBox'
+
+The toggle is a component similar to checkbox and can be used to determine user preferences.
+
+<DemoBox>
+    <Toggle
+      id="notifications"
+      checked={true}
+      onChange={() => {}}
+    >
+      Receive notifications
+    </Toggle>
+</DemoBox>
+
+```jsx
+import { useState } from 'react'
+import { Toggle } from 'insites-ui'
+
+// Inside component
+const [isToggled, setIsToggled] = useState(false)
+const toggle = () => setIsToggled(!isToggled)
+
+<Toggle
+  id="notifications"
+  checked={isToggled}
+  onChange={toggle}
+>
+  Receive notifications
+</Toggle>
+```
