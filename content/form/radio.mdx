@@ -3,39 +3,24 @@ title: Radio
 description: ""
 ---
 
-import { Radio, Box } from 'insites-ui'
 import DemoBox from '../../components/DemoBox'
+import RadioDemo from '../../components/RadioDemo'
 
-The checkbox is an additional control, that fits perfectly "Remember me" and
-accept agreements or conditions function.
+The radio is an additional control, that should be used when user
+is supposed to make only one selection out of a group of options.
 
 <DemoBox>
-    <Radio
-      id="rememberMe"
-      checked={true}
-      onChange={() => {}}
-    >
-      Size L
-    </Radio>
-    <Box mt="1rem">
-        <Radio
-          id="rememberMe"
-          checked={false}
-          onChange={() => {}}
-        >
-          Size XL
-        </Radio>
-    </Box>
+  <RadioDemo />
 </DemoBox>
 
 ```jsx
 import { Radio } from 'insites-ui'
 
 <Radio
-  id="rememberMe"
+  id="sizeL"
   checked={isChecked}
-  onChange={toggle}
+  onChange={check}
 >
-  Remember me
+  Size L
 </Radio>
 ```
