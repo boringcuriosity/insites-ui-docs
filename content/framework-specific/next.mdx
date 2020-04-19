@@ -13,27 +13,27 @@ Update your `next.config.js` to look like this:
 
 ```jsx
 // /next.config.js
-const withImages = require('next-images');
+const withImages = require('next-images')
 const withTM = require('next-transpile-modules')([
   'styled-components',
-  'insites-ui',
-]);
+  'insites-ui'
+])
 
-module.exports = withTM(withImages());
+module.exports = withImages(withTM())
 ```
 
 And your `_app.js` to look like this:
 
 ```jsx
 // /pages/_app.js
-import { ThemeProvider, theme } from 'insites-ui';
-import 'typeface-inter';
+import { ThemeProvider, theme } from 'insites-ui'
+import 'typeface-inter'
 
 export default function CustomApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <Component {...pageProps} />
     </ThemeProvider>
-  );
+  )
 }
 ```
