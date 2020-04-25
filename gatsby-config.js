@@ -50,6 +50,9 @@ module.exports = {
             'form/select',
             'form/textarea',
             'form/toggle'
+          ],
+          Recipes: [
+            'recipes/react-table'
           ]
         }
       }

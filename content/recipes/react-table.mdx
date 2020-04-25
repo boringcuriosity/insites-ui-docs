@@ -1,0 +1,101 @@
+---
+title: Use with React Table
+description: ""
+---
+
+We created the Table components bearing in mind it should be easy to use
+them with `react-table`. Here's a quick example how you can start building with it.
+
+First of all, let's create a wrapper component for out table.
+
+```jsx
+import React from 'react'
+import { useTable, useRowSelect, useSortBy } from 'react-table'
+import { Table } from 'insites-ui'
+
+const Table = ({ columns, data }) => {
+  const {
+    getTableProps,
+    getTableBodyProps,
+    headerGroups,
+    rows,
+    prepareRow
+  } = useTable(
+    {
+      columns,
+      data
+    },
+    useSortBy,
+    useRowSelect
+  )
+
+  return (
+    <Table {...getTableProps()}>
+      <Table.thead>
+        {headerGroups.map((headerGroup) => (
+          <Table.tr {...headerGroup.getHeaderGroupProps()}>
+            {headerGroup.headers.map((column) => (
+              <Table.th
+                {...column.getHeaderProps(column.getSortByToggleProps())}
+              >
+                {column.render("Header")}
+                <span>
+                  {column.isSorted ? (
+                    column.isSortedDesc ? (
+                      // Icon with chevron down
+                    ) : (
+                     // Icon with chevron up
+                    )
+                  ) : (
+                    ""
+                  )}
+                </span>
+              </Table.th>
+            ))}
+          </Table.tr>
+        ))}
+      </Table.thead>
+      <Table.tbody {...getTableBodyProps()}>
+        {rows.map((row, i) => {
+          prepareRow(row);
+          return (
+            <Table.tr {...row.getRowProps()}>
+              {row.cells.map((cell) => {
+                return (
+                  <Table.td {...cell.getCellProps()}>
+                    {cell.render("Cell")}
+                  </Table.td>
+                );
+              })}
+            </Table.tr>
+          );
+        })}
+      </Table.tbody>
+    </Table>
+  )
+}
+
+export default Table
+
+```
+
+And then in the place where you'd like to use it.
+
+```jsx
+// Setup columns
+const columns = React.useMemo(
+    () => [
+      {
+        Header: "Name",
+        accessor: "name",
+      },
+      // Other columns
+    ]
+)
+
+// In the template
+<Table
+  columns={columns}
+  data={FormsStore.forms}
+/>
+```
