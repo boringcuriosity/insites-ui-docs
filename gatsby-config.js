@@ -38,6 +38,7 @@ module.exports = {
             'components/dropdown',
             'components/heading',
             'components/modal',
+            'components/spinner',
             'components/table',
             'components/text',
             'components/tooltip'
