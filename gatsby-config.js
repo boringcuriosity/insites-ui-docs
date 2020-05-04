@@ -53,7 +53,8 @@ module.exports = {
             'form/toggle'
           ],
           Recipes: [
-            'recipes/react-table'
+            'recipes/react-table',
+            'recipes/react-hook-form'
           ]
         }
       }

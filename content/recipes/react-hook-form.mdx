@@ -1,0 +1,81 @@
+---
+title: Use with React Hook Form
+description: ""
+---
+
+Forms implementation with React Hook Form and Insites UI is pretty straightforward.
+Using the Inputs, Selects and Textareas doesn't require any extra steps.
+We strongly encourage you to use it alongside Yup for the validation. You won't regret it.
+
+## Example validation with Yup
+
+```jsx
+const validationSchema = yup.object().shape({
+  email: yup.string().required().email().max(64).label('Email'),
+  password: yup.string().required().min(8).max(128).label('Password')
+})
+```
+
+## Setting up the React Hook Form
+
+```jsx
+const { register, handleSubmit, errors } = useForm({ validationSchema })
+```
+
+## Template example
+```jsx
+<form onSubmit={handleSubmit(onSubmit)}>
+    <FormControl>
+      <FormControl.Label htmlFor="email">Email address</FormControl.Label>
+      <Input
+        id="email"
+        placeholder="your@email.com"
+        name="email"
+        hasError={!!errors.email}
+        ref={register}
+      />
+      {errors.email && <FormControl.Error>{errors.email.message}</FormControl.Error>}
+    </FormControl>
+    <FormControl>
+      <FormControl.Label htmlFor="password">Password</FormControl.Label>
+      <Input
+        type="password"
+        id="password"
+        placeholder="************"
+        name="password"
+        hasError={!!errors.password}
+        ref={register}
+      />
+      {errors.password && <FormControl.Error>{errors.password.message}</FormControl.Error>}
+    </FormControl>
+    <Button variant="primary" type="submit" size="small">Sign in</Button>
+</form>
+```
+
+## About Radio, Checkbox and Toggle
+
+Due to React Hook Form's uncontrolled nature, to use our controlled components you can do following:
+
+```jsx
+// Import watch and setValue from RHF and set watcher for your Radio, Checkbox or Toggle.
+const { register, handleSubmit, errors, watch, setValue } = useForm({
+  validationSchema
+})
+const typeValue = watch('type')
+
+// Template
+<form onSubmit={handleSubmit(onSubmit)}>
+    <FormControl>
+        <FormControl.Label htmlFor="workflowTypeEmail">Workflow type</FormControl.Label>
+        <Radio
+          name="type"
+          value="email"
+          checked={typeValue === 'email'}
+          ref={register}
+          onChange={() => { setValue('type', 'email') }}
+        >
+          Email notification
+        </Radio>
+    </FormControl>
+</form>
+```
