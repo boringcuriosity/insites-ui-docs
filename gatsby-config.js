@@ -27,9 +27,9 @@ module.exports = {
             'principles',
             'design-system'
           ],
-          'Framework Specific': [
-            'framework-specific/gatsby',
-            'framework-specific/next'
+          'Tools': [
+            'tools/gatsby',
+            'tools/next'
           ],
           Components: [
             'components/box',
@@ -53,6 +53,10 @@ module.exports = {
             'form/toggle'
           ],
           Recipes: [
+            'recipes/react-table',
+            'recipes/react-hook-form'
+          ],
+          What ever: [
             'recipes/react-table',
             'recipes/react-hook-form'
           ]
