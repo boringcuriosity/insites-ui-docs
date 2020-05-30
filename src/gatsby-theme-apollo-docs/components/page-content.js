@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import React, {useRef, useState} from 'react';
-import SectionNav from './section-nav';
+import SectionNav from 'https://raw.githubusercontent.com/apollographql/gatsby-theme-apollo/cedfdd7b57377a35333283bde4fe0cc7c8518780/packages/gatsby-theme-apollo-docs/src/components/section-nav.js';
 import styled from '@emotion/styled';
 import useMount from 'react-use/lib/useMount';
-import {HEADER_HEIGHT} from '../utils';
+import {HEADER_HEIGHT} from 'https://raw.githubusercontent.com/apollographql/gatsby-theme-apollo/cedfdd7b57377a35333283bde4fe0cc7c8518780/packages/gatsby-theme-apollo-docs/src/utils.js';
 import {IconGithub} from '@apollo/space-kit/icons/IconGithub';
 import {IconSchema} from '@apollo/space-kit/icons/IconSchema';
 import {PageNav, breakpoints, colors} from 'gatsby-theme-apollo-core';
-import {ReactComponent as SpectrumLogo} from '../assets/spectrum.svg';
+import {ReactComponent as SpectrumLogo} from 'https://raw.githubusercontent.com/apollographql/gatsby-theme-apollo/cedfdd7b57377a35333283bde4fe0cc7c8518780/packages/gatsby-theme-apollo-docs/src/assets/spectrum.svg';
 import {withPrefix} from 'gatsby';
 
 const Wrapper = styled.div({
