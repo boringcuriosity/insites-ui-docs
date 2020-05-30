@@ -3,7 +3,7 @@ require('dotenv').config()
 module.exports = {
   pathPrefix: '',
   siteMetadata: {
-    title: `Insites UI Docs`,
+    title: `Nokode - Nocode case studies`,
     author: `@mrcnk`,
   },
   plugins: [
@@ -12,9 +12,9 @@ module.exports = {
       resolve: 'gatsby-theme-apollo-docs',
       options: {
         root: __dirname,
-        siteName: 'Insites UI',
-        subtitle: 'Documentation',
-        description: 'An opinionated UI components library for React.',
+        siteName: 'Nokode',
+        subtitle: 'Nokode - Nocode case studies',
+        description: 'Nokode - Nocode case studies helpful to understand what is fooling and helping people across the internet.',
         githubRepo: 'insites-co/insites-ui-docs',
         algoliaApiKey: process.env.GATSBY_ALGOLIA_API_KEY,
         algoliaIndexName: process.env.GATSBY_ALGOLIA_INDEX,
