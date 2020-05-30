@@ -23,9 +23,9 @@ module.exports = {
           null: [
             'index',
             'getting-started',
+            'are-we-serious',
             'customization',
             'principles',
-            'are-we-serious',
             'design-system'
           ],
           'Tools': [
