@@ -1,0 +1,39 @@
+---
+title: Are we serious?
+description: "A detailed case study about being serious regarding maing everything low/no code"
+---
+
+To customize the default theme you can create your own `theme.js`.
+
+Default values are available [here](https://github.com/insites-co/insites-ui/blob/master/src/theme/index.ts).
+
+```js
+// /src/theme.js
+import { theme } from 'insites-ui'
+
+export default {
+  ...theme,
+  colors: {
+    ...theme.colors,
+    primary: '#42f5aa'
+  }
+}
+```
+
+And then pass it to the `ThemeProvider`.
+
+```jsx
+// /src/layouts/Default.js
+import { ThemeProvider } from 'insites-ui'
+import customTheme from '../theme'
+
+const DefaultLayout = ({ children }) => {
+  return (
+    <ThemeProvider theme={customTheme}>
+      {children}
+    </ThemeProvider>
+  )
+}
+
+export default DefaultLayout
+```
