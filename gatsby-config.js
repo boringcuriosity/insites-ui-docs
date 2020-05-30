@@ -25,6 +25,7 @@ module.exports = {
             'getting-started',
             'customization',
             'principles',
+            'are-we-serious',
             'design-system'
           ],
           'Tools': [
