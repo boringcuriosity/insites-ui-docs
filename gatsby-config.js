@@ -56,10 +56,6 @@ module.exports = {
           Recipes: [
             'recipes/react-table',
             'recipes/react-hook-form'
-          ],
-          What ever: [
-            'recipes/react-table',
-            'recipes/react-hook-form'
           ]
         }
       }
